@@ -232,7 +232,7 @@
  
   .portada .video1 {
     margin: -40px auto;
-    max-width: 600px;
+    max-width: 1500px;
     padding-top: 170px;
     margin-top: -120px;
     margin-bottom: 20px;
@@ -332,8 +332,13 @@
     height: auto;
   }
  
-  .section4 .content {
+  .section4 .content h1 {
     text-align: center;
+    margin-top: 10px;
+  }
+  .section4 .content p {
+    text-align: center;
+    margin-top: 10px;
   }
  
   .etapas {
