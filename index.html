@@ -102,13 +102,33 @@
         </div>
         
         <!-- Category Circles -->
-        <div class="circle category-circle" data-category="Category 1">Category 1</div>
-        <div class="circle category-circle" data-category="Category 2">Category 2</div>
-        <div class="circle category-circle" data-category="Category 3">Category 3</div>
-        <div class="circle category-circle" data-category="Category 4">Category 4</div>
-        <div class="circle category-circle" data-category="Category 5">Category 5</div>
-        <div class="circle category-circle" data-category="Category 6">Category 6</div>
-        <div class="circle category-circle" data-category="Category 7">Category 7</div>
+        <div class="circle category-circle" data-category="Category 1">Demográficas según sexo suscriptor</div>
+        <div class="circle category-circle" data-category="Category 2">Demográficas según edad y grupos etarios</div>
+        <div class="circle category-circle" data-category="Category 3">Demográfico por NIvel Socio económico</div>
+        <div class="circle category-circle" data-category="Category 4">Tipo de lector</div>
+        <div class="circle category-circle" data-category="Category 5">Salud y Bienestar</div>
+        <div class="circle category-circle" data-category="Category 6">Salud y Bienestar femenina</div>
+        <div class="circle category-circle" data-category="Category 7">Industrias</div>
+        <div class="circle category-circle" data-category="Category 8">Comercio (Retail)</div>
+        <div class="circle category-circle" data-category="Category 9">Servicio financiero</div>
+        <div class="circle category-circle" data-category="Category 10">Entretenimiento y Cultura</div>
+        <div class="circle category-circle" data-category="Category 11">Educación y Conocimientos</div>
+        <div class="circle category-circle" data-category="Category 12">Estilo de vida</div>
+        <div class="circle category-circle" data-category="Category 13">Noticias y Actualidad</div>
+        <div class="circle category-circle" data-category="Category 14">Deportes</div>
+        <div class="circle category-circle" data-category="Category 15">Viajes</div>
+        <div class="circle category-circle" data-category="Category 16">Automoviles</div>
+        <div class="circle category-circle" data-category="Category 17">Tecnologia y Computación</div>
+        <div class="circle category-circle" data-category="Category 18">Familia</div>
+        <div class="circle category-circle" data-category="Category 19">Food and Drinks</div>
+        <div class="circle category-circle" data-category="Category 20">Estilo y Moda</div>
+        <div class="circle category-circle" data-category="Category 21">Arq, decoración y construcción</div>
+        <div class="circle category-circle" data-category="Category 22">Agro</div>
+        <div class="circle category-circle" data-category="Category 23">Orden publico y seguridad</div>
+        <div class="circle category-circle" data-category="Category 24">Empleo</div>
+        <div class="circle category-circle" data-category="Category 25">Clima y medioambiente</div>
+
+      
     </div>
                      
                   </div>
@@ -149,7 +169,6 @@
        document.querySelectorAll('.category-circle').forEach(circle => {
     circle.addEventListener('mouseenter', (e) => {
         const category = e.target.getAttribute('data-category');
-     
         e.target.innerHTML = `<p>${category} Information</p>`;
     });
 
@@ -157,6 +176,12 @@
         const category = e.target.getAttribute('data-category');
         e.target.innerHTML = category; 
     });
+});
+
+// Mostrar/ocultar círculos secundarios al hacer clic en el círculo principal
+document.querySelector('.main-circle').addEventListener('click', function() {
+    const container = document.querySelector('.container');
+    container.classList.toggle('active'); // Alterna la clase 'active' para mostrar/ocultar los círculos
 });
     </script>
 </html>
