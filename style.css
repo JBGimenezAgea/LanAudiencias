@@ -349,6 +349,15 @@
     gap: 25px;
     width: 100%;
   }
+  .etapas img {
+    max-width: 100%;  
+    height: auto;    
+    display: block;  
+    margin: 0 auto;  
+    object-fit: cover; 
+    max-height: 300px; 
+    border-radius: 8px; 
+  }
  
   .etapa {
     box-sizing: border-box;
@@ -379,252 +388,68 @@
   }
  
   .section5 {
-    background-color: #E7F8FA
+    background-color: #E7F8FA;
+    padding: 20px;
   }
- 
-  .section5 .bloques {
-    width: 100%
-  }
- 
-  .section5 .bloques h3 {
-    color: #091934
-  }
- 
-  .section5 .bloques .tip {
-    color: #091934
-  }
- 
-  .section5 .bloques .bloque {
-    border-radius: 20px;
-    padding: 20px
-  }
- 
-  .section5 .bloques .bloque.bloque-azul {
-    background-color: #091934;
-    width: 100%;
+  
+  .section5 .content {
     text-align: center;
   }
- 
-  .section5 .bloques .bloque.bloque-celeste {
+  
+  .section5 .content h2,
+  .section5 .content h3 {
     color: #091934;
   }
- 
-  .section5 .bloques .bloque.bloque-blanco {
-    background-color: white
-  }
- 
-  .section5 .bloques .bloque .tit {
-    font-size: 22px;
-    font-weight: 700
-  }
- 
-  .section5 .bloques .bloque .col {
-    width: 100%
-  }
- 
-  .section5 .bloques .bloque1 {
+  
+  .section5 .col {
     display: flex;
-    align-items: center;
-    justify-content: space-between
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
   }
- 
-  .section5 .bloques .bloque1 .innercol1 h3 {
-    color: #091934
-  }
- 
-  .section5 .bloques .bloque1 .innercol1 .txt {
-    font-size: 30px;
-    color: #091934
-  }
- 
-  .section5 .bloques .bloque1 .innercol2 img {
-    width: 50px;
-    height: auto
-  }
- 
-  .section5 .bloques .dosbloques {
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-  }
- 
-  .section5 .bloques .dosbloques .bloque2 {
-    width: calc(50% - 10px);
-    padding: 20px 15px 15px
-  }
- 
-  .section5 .bloques .dosbloques .bloque2 .logo {
-    width: 100%;
-    margin-bottom: 20px;
-  }
- 
-  .section5 .bloques .dosbloques .bloque2 .logo img {
-    height: 36px;
-    width: auto;
-  }
- 
-  .section5 .bloques .dosbloques .bloque2 .cajas {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-  }
- 
-  .section5 .bloques .dosbloques .bloque2 .cajas div {
-    width: calc(50% - 5px);
-    padding: 5px;
-    background-color: rgba(255,255,255,0.16);
-    border-radius: 12px;
-    font-size: 14px;
-    line-height: 16px
-  }
- 
-  .section5 .bloques .tresbloques {
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-  }
- 
-  .section5 .bloques .tresbloques .bloque3 {
-    width: calc(33.33% - 10px)
-  }
- 
-  .section5 .bloques .tresbloques .bloque3 .ico {
-    margin-bottom: 10px
-  }
- 
-  .section5 .bloques .tresbloques .bloque3 .ico img {
-    height: 50px;
-    width: auto
-  }
- 
-  .section5 .bloques .tresbloques .bloque3 .txt {
-    color: #091934;
-    font-weight: 700
-  }
- 
-  .section5 .bloques .bloque4 .lista ul {
-    width: 100%;
-   
-  }
- 
-  .section5 .listafullw li {
-    color: #091934
-  }
-
-  .section5 img {
-    align-items: center;
-  }
+  
+  
   .benefits-list {
     list-style-type: none;
     padding: 0;
     margin: 20px auto;
     text-align: center;
-    max-width: 1500px;
-    margin-left: 400px;
-}
- 
-.benefits-list li {
+    max-width: 1000px;
+  }
+  
+  .benefits-list li {
     color: #000;
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 2;
     margin: 10px 0;
     font-weight: 500;
     text-align: justify;
-    padding: 10px 200px;
+    padding: 10px 20px;
     border-radius: 8px;
-    display: inline-block;
-    width: 100%;
-}
- 
-.benefits-list li strong {
-    color: #000;
-    margin-right: 5px;
-}
- 
-  .section5 .bloques .bloque4 .lista ul li {
-    padding: 10px 35px 10px;
-    color: #000;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-    background-image: none;
-    margin: 10px 0;
-    list-style-type: none;
-    font-weight: 500;
-    border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.05);
-}
- 
-.section5 .bloques .bloque4 .lista ul li strong {
-    color: #000;
-}
- 
-.section5 .bloques .bloque4 {
+  }
+  
+  /* Contenedor de la imagen */
+  .section5 .col > div:last-child {
+    width: 45%;
     padding: 20px;
-    text-align: center;
-}
- 
-  .section5 .bloques .bloque4 .lista ul li:nth-child(odd) {
-    background-color: rgba(37,167,186,0.1)
-  }
- 
-  .section5 .bloques .bloque5 h3 {
-    color: #091934
-  }
- 
-  .section5 .bloques .bloque5 .listadoble {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .section5 .col {
-    display: flex; 
-    align-items: flex-start; 
-    justify-content: space-between; 
-    margin: 20px 0; 
-}
-
-.section5 .bloque4 {
-    width: 50%; 
-    padding: 20px;
-    box-sizing: border-box; 
-}
-
-.section5 .bloque4 .benefits-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; 
-}
-
-.section5 .bloque4 .benefits-list li {
-    color: #000;
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 10px 0;
-    font-weight: 500;
-    text-align: justify;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.05);
-}
-
-.section5 .col > div:last-child {
-    width: 45%; 
-    padding: 20px; 
     box-sizing: border-box;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-}
-
-.section5 .col > div:last-child img {
-    width: 100%; 
-    height: auto;
-    border-radius: 10px; 
-}
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section5 .col > div:last-child img {
+    max-width: 100%;  
+    height: auto;    
+    display: block;  
+    margin: 0 auto;  
+    object-fit: cover; 
+    max-height: 500px; 
+    border-radius: 8px; 
+  }
  
   .section6 .item {
     padding-bottom: 40px;
@@ -702,20 +527,21 @@
 }
 
 .section8 .image-container {
-    width: 45%; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 0 20px; 
-    box-sizing: border-box; 
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
+
 .section8 .image-container img {
-    width: 100%; 
-    height: auto;
-    border-radius: 10px; 
-    max-width: 600px;
+  width: 100%; 
+  height: auto;
+  border-radius: 10px;
+  max-width: 400px; 
 }
+
 
 
 .section9 .content {
