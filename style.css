@@ -202,42 +202,57 @@
   }
  
   .portada {
-    position: absolute; 
+    position: relative; /* Posiciona la portada relativa para el control del contenido */
     width: 100%;
-    
-    top: 0;
-    left: 0;
-    overflow: hidden; 
+    height: 100vh; /* Asegura que la sección cubra la altura completa de la ventana */
+    overflow: hidden; /* Evita que cualquier contenido se desborde */
+    display: flex; /* Flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin: 0; /* Elimina márgenes que podrían afectar el diseño */
   }
   
   .portada .video {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
     top: 0;
     left: 0;
-    overflow: hidden;
-    z-index: -1; 
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Envía el video al fondo */
+    overflow: hidden; /* Asegura que el video no se desborde */
   }
   
   .portada .video .fullscreen-video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+  }
+  
+  .portada .content {
+    width: 100%;
+    max-width: 1320px; /* Limita el ancho máximo del contenido */
+    padding: 40px 20px; /* Espacio interno para el contenido */
+    z-index: 2; /* Asegura que el contenido esté sobre el video de fondo */
+    text-align: center; /* Centra el texto */
+    position: relative; /* Para que el contenido esté por encima del video */
+  }
+  
+  .portada h1 {
+    font-size: 36px; /* Tamaño de fuente del título */
+    line-height: 1.2; /* Altura de línea para un mejor espaciado */
+    margin: 0; /* Margen superior eliminado */
+    color: white; /* Color del texto */
+    padding-bottom: 20px; /* Añade espacio debajo del título */
   }
   
   .portada .video1 {
-    max-width: 2500px;
+    max-width: 800px;
     margin: 0 auto;
-    padding-top: 200px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    z-index: 2; 
+    padding-top: 30px;
+    z-index: 2; /* Asegura que el video esté sobre el fondo */
   }
   
   .portada .video1 video {
@@ -248,42 +263,36 @@
   }
   
   .portada .video:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #091934;
-    background: linear-gradient(0deg, #091934 0%, rgba(9, 25, 52, 0) 100%);
-    display: block;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: none; /* Asegura que no haya un fondo que oculte el video */
   }
   
   .portada .content {
-    height: 100%;
+    min-height: 80vh; /* Cambia a min-height para permitir la expansión */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Cambiado de center a flex-start para permitir control del espaciado */
+    justify-content: center; /* Centra el contenido verticalmente */
     align-items: center; /* Centra el contenido horizontalmente */
-    padding-top: 150px; /* Espacio superior adicional para bajar el contenido */
+    padding: 0 20px; /* Añade padding lateral */
     z-index: 2; /* Asegura que esté sobre el video de fondo */
     position: relative;
   }
   
   .portada h1 {
-    font-size: 36px; /* Tamaño de fuente del título */
-    line-height: 1.2; /* Altura de línea para un mejor espaciado */
-    margin-top: 200px; 
-    color: white; /* Color del texto */
-    text-align: center; /* Centrado del título */
-    padding-bottom: 10px; /* Añade espacio debajo del título */
+    font-size: 36px; 
+    line-height: 1.2; 
+    margin: 0; 
+    color: white; 
+    text-align: center; 
+    padding-bottom: 20px; 
+    margin-top: -100px;
   }
   
-  .portada .content .flecha a {
-    display: block;
-    width: 100%;
-    height: 100%;
+  .section2 {
+    position: relative; /* Asegura que esta sección esté en flujo normal */
+    margin-top: 20px; /* Añade margen superior para separar de la sección anterior */
+    padding: 40px 0; /* Espaciado superior e inferior para evitar superposición */
+    background-color: #f0f0f0; /* Color de fondo de la sección */
+    z-index: 1; /* Asegura que esta sección esté sobre el fondo */
   }
   
   .section {
@@ -298,7 +307,6 @@
     position: relative;
     z-index: 10;
   }
- 
   .section2 {
     padding-top: 60px;
     background: #61d5db;
