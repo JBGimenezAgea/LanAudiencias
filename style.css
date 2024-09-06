@@ -231,18 +231,20 @@
   }
  
   .portada .video1 {
-    margin: -40px auto;
-    max-width: 1500px;
-    padding-top: 170px;
-    margin-top: -120px;
-    margin-bottom: 20px;
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding-top: 20px; 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
 }
- 
+
 .portada .video1 video {
-    width: 100%;
-    height: auto;
+    max-width: 100%; 
+    height: auto; 
     display: block;
+    margin: 0 auto; 
 }
+
  
   .portada .video:after {
     content: "";
