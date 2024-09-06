@@ -83,15 +83,33 @@
           </section>
           <section class="section6 section" id="m02">
               <div class="content">
-                  <h2 class="pbl align-center wow animate__animated animate__fadeIn">Selección de audiencias por rubro</h2>
+                  <h2 class="pbl align-center wow animate__animated animate__fadeIn">Segmentación Avanzada 
+                </h2>
                   <div class="item fullw">
                       <div class="col wow animate__animated animate__fadeIn">
                          
                           <div class="txt pb fullw">
-                              <p>Más de 500 audiencias categorizadas y la posibilidad de crear segmentos a pedido, con un sistema DMP muy potente.</p>
+                              <p>Contamos con más de 500 audiencias y la posibilidad de crear segmentos a pedido con un sistema DMP muy potente.</p>
                        
                           </div>
                       </div>
+                      
+    <div class="container">
+        <!-- Circle in the center -->
+        <div class="circle main-circle">
+            <h2>Categorías</h2>
+            
+        </div>
+        
+        <!-- Category Circles -->
+        <div class="circle category-circle" data-category="Category 1">Category 1</div>
+        <div class="circle category-circle" data-category="Category 2">Category 2</div>
+        <div class="circle category-circle" data-category="Category 3">Category 3</div>
+        <div class="circle category-circle" data-category="Category 4">Category 4</div>
+        <div class="circle category-circle" data-category="Category 5">Category 5</div>
+        <div class="circle category-circle" data-category="Category 6">Category 6</div>
+        <div class="circle category-circle" data-category="Category 7">Category 7</div>
+    </div>
                      
                   </div>
  
@@ -128,9 +146,17 @@
       </main>
       <footer>2024 | AGEA Tecnología Comercial</footer>
       <script>
-       function toggleDropdown() {
-            var dropdownContent = document.querySelector('.dropdown-content');
-            dropdownContent.classList.toggle('show');
-        }
+       document.querySelectorAll('.category-circle').forEach(circle => {
+    circle.addEventListener('mouseenter', (e) => {
+        const category = e.target.getAttribute('data-category');
+     
+        e.target.innerHTML = `<p>${category} Information</p>`;
+    });
+
+    circle.addEventListener('mouseleave', (e) => {
+        const category = e.target.getAttribute('data-category');
+        e.target.innerHTML = category; 
+    });
+});
     </script>
 </html>
